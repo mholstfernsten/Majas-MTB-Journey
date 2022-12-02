@@ -1,4 +1,14 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
+    font-weight: 300;
+    color: #ff0000;
+}
+
+*/headings/*
+
+h1 {
+    font-family: Arial, Helvetica;
+    font-weight: 200;
+    color: #ff0000;
 }
