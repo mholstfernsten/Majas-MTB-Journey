@@ -5,10 +5,37 @@ body {
     color: #ff0000;
 }
 
-*/headings/*
+/*headings*/
 
 h1 {
     font-family: Arial, Helvetica;
     font-weight: 200;
     color: #ff0000;
+}
+
+
+/*logo and frontpage image*/
+
+#maja-back {
+    height: 500px;
+    width: 50%;
+    background: url('../images/maja-back.jpg');
+    float: left;
+    overflow: hidden;
+    border: 5px solid grey;
+    padding: 20px 5px 5px 20px;
+}
+
+#logo-maja {
+    height: 200px;
+    width: 200px;
+    background: url('../images/logo-maja.jpg');
+    float: right;
+    overflow: hidden;
+    border: 5px solid black;
+    padding: 20px 5px 5px 20px;
+}
+img {
+    height: 100%
+    width: 100%
 }
