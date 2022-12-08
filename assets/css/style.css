@@ -13,13 +13,20 @@ h1 {
     color: #ff0000;
 }
 
+#intro {
+    font-size: 300%;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: fantasy;
+}
 
 /*logo and frontpage image*/
 
 #maja-back {
     height: 500px;
     width: 50%;
-    background: url('../images/maja-back.jpg');
+    background: url('../images/autograph.jpg');
     float: left;
     overflow: hidden;
     border: 5px solid grey;
