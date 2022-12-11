@@ -1,11 +1,10 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
     font-weight: 300;
     color: #ff0000;
 }
 
-/*headings*/
+/*headings and logo*/
 
 h1 {
     font-family: Arial, Helvetica;
@@ -13,36 +12,61 @@ h1 {
     color: #ff0000;
 }
 
-#intro {
+#logo {
     font-size: 300%;
     color: black;
-    text-align: center;
     text-transform: uppercase;
-    font-family: fantasy;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+}
+
+/* navigation links*/
+
+
+#menu {
+    font-size: small;
+    letter-spacing: 3px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#menu li {
+    text-align: center;
+    list-style-type: none;
+    margin-right: 20px;
+    color: black;
+    display: inline;
 }
 
 /*logo and frontpage image*/
 
-#maja-back {
-    height: 500px;
-    width: 50%;
-    background: url('../images/autograph.jpg');
+#autograph {
+    height: 390px;
+    width: 30%;
+    background: url('../images/autograph1.jpg') no-repeat center center;
     float: left;
     overflow: hidden;
     border: 5px solid grey;
     padding: 20px 5px 5px 20px;
-}
+    display: block;
+    }
 
 #logo-maja {
-    height: 200px;
-    width: 200px;
-    background: url('../images/logo-maja.jpg');
-    float: right;
+    height: 300px;
+    width: 100%;
+    background: url('../images/logo-maja2.jpg') no-repeat center center;
+    float: left;
     overflow: hidden;
-    border: 5px solid black;
-    padding: 20px 5px 5px 20px;
+    padding: 20px 10px 50px 20px;
+}
+
+#logo-outer {
+    height: 300px;
+    width: 100%;
+    position: relative;
 }
 img {
     height: 100%
     width: 100%
 }
+
