@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=JosefinSans|LucidaSans|Geneva|Verdana')
 * {
     box-sizing: border-box;
     padding: 10px;
@@ -120,6 +121,50 @@ img {
     letter-spacing: 1px;
 }
 
+#event-calendar {
+    height: 390px;
+    width: 30%;
+    background: url('../images/calendar.jpg') no-repeat center center;
+    float: left;
+    overflow: hidden;
+    border: 5px solid grey;
+    padding: 20px 5px 5px 20px;
+    display: block;
+}
+
+#events {
+    text-align: center;
+    padding-left: 20px;
+}
+
+.events-text {
+    padding: 50px 50px 100px 350px;
+    font-size: medium;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+#gallery-img {
+    height: 390px;
+    width: 30%;
+    background: url('../images/gallery.jpg') no-repeat center center;
+    float: right;
+    overflow: hidden;
+    border: 5px solid grey;
+    padding: 20px 5px 5px 20px;
+    display: block;
+}
+
+#gallery {
+    text-align: center;
+    padding-right: 20px;
+}
+
+table, th, td {
+    border: 1px solid slategray;
+    border-collapse: collapse;
+}
+
 /* footer */
 
 .social-media-links {
@@ -128,7 +173,7 @@ img {
 
 .social-media-links i {
     color: blue;
-    font-size: 160%;
+    font-size: 200%;
     margin: 1%;
     padding: 3%;
 }
