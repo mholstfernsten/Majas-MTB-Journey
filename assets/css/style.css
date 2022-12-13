@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=JosefinSans|LucidaSans|Geneva|Verdana')
+
 * {
     box-sizing: border-box;
     padding: 10px;
@@ -173,7 +174,7 @@ table, th, td {
 
 .social-media-links i {
     color: blue;
-    font-size: 200%;
+    font-size: 300%;
     margin: 1%;
     padding: 3%;
 }
@@ -195,3 +196,47 @@ table, th, td {
     border-radius: 20%;
     text-decoration: none;
 }
+
+/*gallery page*/
+
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
