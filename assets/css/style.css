@@ -59,9 +59,19 @@ img {
 
 /*welcome section*/
 
-.container {
-     display: flex;
-     text-align: center;
+.section {
+    margin-top: 100px;
+}
+
+.section .section-item {
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.section-item .reverse {
+     flex-direction: row-reverse;
+     justify-content: space-between;
+     
 }
 
 #autograph {
