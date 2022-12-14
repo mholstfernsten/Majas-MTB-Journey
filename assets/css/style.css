@@ -3,7 +3,7 @@
 * {
     box-sizing: border-box;
     padding: 10px;
-    margin: 10px;
+    margin: auto;
     border: none;
 }
 
@@ -19,6 +19,23 @@ h1, h2 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #000000;
 }
+
+.imgbox {
+    display: grid;
+    height: 90%;
+}
+
+.center-fit {
+    max-width: 50%;
+    max-height: 100vh;
+    margin: auto;
+}
+
+img {
+    height: 90%;
+    width: 90%;
+}
+
 
 /* navigation links*/
 
@@ -37,25 +54,6 @@ h1, h2 {
     color: black;
     display: inline;
 }
-
-/*logo and frontpage image*/
-
-.imgbox {
-    display: grid;
-    height: 90%;
-}
-
-.center-fit {
-    max-width: 50%;
-    max-height: 100vh;
-    margin: auto;
-}
-
-img {
-    height: 90%;
-    width: 90%;
-}
-
 
 /*welcome section*/
 
@@ -92,7 +90,7 @@ img {
 }
 
 .welcome-text {
-    padding: 50px 50px 100px 350px;
+    padding: 50px 50px 100px 500px;
     font-size: medium;
     text-align: center;
     letter-spacing: 1px;
@@ -115,11 +113,14 @@ img {
 }
 
 .about-text {
-    padding: 50px 50px 100px 350px;
+    padding: 50px 500px 150px 50px;
     font-size: medium;
     text-align: center;
     letter-spacing: 1px;
 }
+
+
+/* event section*/
 
 #event-calendar {
     height: 390px;
@@ -154,16 +155,7 @@ img {
     letter-spacing: 1px;
 }
 
-#gallery-img {
-    height: 390px;
-    width: 30%;
-    background: url('../images/gallery.jpg') no-repeat center center;
-    float: right;
-    overflow: hidden;
-    border: 5px solid grey;
-    padding: 20px 5px 5px 20px;
-    display: block;
-}
+/*gallery*/
 
 #gallery {
     text-align: center;
@@ -177,12 +169,32 @@ table, th, td {
 
 /* footer */
 
+.footer {
+    height: 100px;
+    border: 1px solid slategray;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.footerbox {
+    display: grid;
+    height: 90%;
+}
+
+.container {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .social-media-links {
     text-align: center;
 }
 
 .social-media-links i {
-    color: blue;
+    color: rgb(69, 69, 232);
     font-size: 300%;
     margin: 1%;
     padding: 3%;
@@ -247,8 +259,4 @@ div.gallery img {
     }
   }
   
-  .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+ 
