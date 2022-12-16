@@ -61,22 +61,16 @@ img {
     border-bottom: 1px solid #777;
 }
 
-/*welcome section*/
-
-.section {
-    margin: 100px 20px 30px 20px;
-    
+.section-item {
+     float: left;
+     width: 50%;
+     padding: 10px;
 }
 
-.section .section-item {
-    display: flex;
-    margin-bottom: 80px;
-}
-
-.section-item .reverse {
-     flex-direction: row-reverse;
-     justify-content: space-between;
-     
+.section::after {
+     content: "";
+     clear: both;
+     display: block;
 }
 
 #autograph {
@@ -97,8 +91,8 @@ img {
 }
 
 .welcome-text {
-    padding: 50px 50px 100px 500px;
-    font-size: small;
+    padding: 50px 50px 50px 50px;
+    font-size: 16px;
     text-align: center;
     letter-spacing: 1px;
 }
@@ -120,14 +114,26 @@ img {
 }
 
 .about-text {
-    padding: 50px 500px 150px 50px;
-    font-size: small;
+    padding: 50px 50px 50px 50px;
+    font-size: 16px;
     text-align: center;
     letter-spacing: 1px;
 }
 
 
 /*events*/
+
+.event-item {
+    float: right;
+    width: 50%;
+    padding: 10px;
+}
+
+.event::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
 #event-calendar {
     height: 390px;
@@ -140,26 +146,27 @@ img {
     display: block;
 }
 
-.column {
-    float: left;
-    width: 50%;
-}
-
-.row::after {
-    display: table;
-    clear: both;
-}
-
-#events {
-    text-align: center;
+#event {
+    text-align: left;
     padding-left: 20px;
 }
 
-.events-text {
-    padding: 50px 50px 100px 350px;
-    font-size: medium;
+.event-text {
+    padding: 50px 50px 50px 50px;
+    font-size: 16px;
     text-align: center;
     letter-spacing: 1px;
+}
+
+table, tr, th {
+    table-layout: fixed;
+    text-align: center;
+    width: 70%;
+    border-collapse: collapse;
+    border: 3px solid;
+    border-style: groove;
+    background-color: rgb(219, 224, 228);
+    row-gap: 3px;
 }
 
 /*gallery*/
@@ -263,6 +270,9 @@ footer {
     .responsive {
       width: 100%;
     }
+    .section {
+        width: 100%;
+    }
   }
 
 @media (max-width: 600px) {
@@ -274,6 +284,7 @@ footer {
     p {
         clear: both;
     }
+
 }
 
 /*contact form*/
