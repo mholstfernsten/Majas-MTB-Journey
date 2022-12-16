@@ -100,7 +100,7 @@ img {
 }
 
 #menu a:hover {
-    border-bottom: 1px solid #777;
+    color: #0000ff;
 }
 
 .welcome-text {
@@ -211,6 +211,10 @@ footer {
     text-align: center;
     display: grid;
     padding-top: 100px;
+}
+
+.social-media-links :hover {
+    color: #0000ff;
 }
 
 .social-media-links i {
