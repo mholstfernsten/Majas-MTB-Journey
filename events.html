@@ -34,15 +34,10 @@
         </nav>
     </header>
 
-    <section class="event">
-        <div class="event-item"></div>
-              <a target="_blank" href="url('../images/calendar.jpg')">
-                <img src="assets/images/calendar.jpg" alt="calendar" width="300" height="200">
-              </a>
-        <div class="event-text">
-        
-        <h2>Upcoming Events</h2>
-            <br>
+    <h1>Upcoming Events</h1>
+    <br>
+    <div class="row">
+        <div class="col-6">
             <table>
                 <tr>
                     <th>What</th>
@@ -80,10 +75,20 @@
                     <td></td>
                 </tr>
             </table>
-        </div>
-    </section>
+        </div>      
     
-    <section class="contact-form" id="contact">
+        <div class="col-6">    
+            <div class="event-text">
+            <h2>The calendar</h2>
+            <br>
+            <p>Upcoming events will be added as soon as possible but be aware that smaller competitions might appear with just a few days to spare.</p>
+            <br>
+            </div>
+        </div>
+    </div>    
+    <div>
+        
+    <div class="contact-form" id="contact">
         <h2>Contact us</h2>
         <form action="mailto:helena@rapibo.se" method="post" enctype="text/plain">
             <label for="name">Name:</label>
@@ -94,7 +99,7 @@
             <textarea class="text" id="message" name="message" rows="3" cols="50"></textarea><br><br>
             <input class="button" type="submit" value="Send">
         </form>
-    </section>
+    </div>
     
     <footer>
         <ul class="social-media-links">

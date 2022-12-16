@@ -7,11 +7,46 @@
     border: none;
 }
 
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: none;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+  @media only screen and (max-width: 1200px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
+
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 300;
     color: black;
     padding-bottom: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /*headings and logo*/
@@ -19,6 +54,13 @@ body {
 h1, h2 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #000000;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 .imgbox {
@@ -61,73 +103,20 @@ img {
     border-bottom: 1px solid #777;
 }
 
-.section-item {
-     float: left;
-     width: 50%;
-     padding: 10px;
-}
-
-.section::after {
-     content: "";
-     clear: both;
-     display: block;
-}
-
-#autograph {
-    height: 390px;
-    width: 30%;
-    background: url('../images/autograph1.jpg') no-repeat center center;
-    float: left;
-    overflow: hidden;
-    border: 5px solid grey;
-    padding: 20px 5px 5px 20px;
-    display: block;
-    }
-
-
-#welcome {
-    text-align: left;
-    padding-left: 20px;
-}
-
 .welcome-text {
-    padding: 50px 50px 50px 50px;
-    font-size: 16px;
-    text-align: center;
-    letter-spacing: 1px;
-}
-
-#about-photo {
-    height: 390px;
-    width: 30%;
-    background: url('../images/about.jpg') no-repeat center center;
-    float: right;
-    overflow: hidden;
-    border: 5px solid grey;
-    padding: 20px 5px 5px 20px;
-    display: block;
-}
-
-#about {
-    text-align: left;
-    padding-right: 20px;
+    width: 100%;
+    padding: 50px 10px 20px 10px;
+    text-align: center; 
 }
 
 .about-text {
-    padding: 50px 50px 50px 50px;
-    font-size: 16px;
-    text-align: center;
-    letter-spacing: 1px;
+    width: 100%;
+    padding: 50px 10px 20px 10px;
+    text-align: center; 
 }
 
 
 /*events*/
-
-.event-item {
-    float: right;
-    width: 50%;
-    padding: 10px;
-}
 
 .event::after {
     content: "";
@@ -135,42 +124,36 @@ img {
     display: table;
 }
 
-#event-calendar {
-    height: 390px;
-    width: 30%;
-    background: url('../images/calendar.jpg') no-repeat center center;
-    float: left;
-    overflow: hidden;
-    border: 5px solid grey;
-    padding: 20px 5px 5px 20px;
-    display: block;
-}
-
 #event {
-    text-align: left;
+    text-align: right;
     padding-left: 20px;
 }
 
 .event-text {
-    padding: 50px 50px 50px 50px;
+    padding: 0px 50px 50px 50px;
     font-size: 16px;
     text-align: center;
     letter-spacing: 1px;
 }
 
 table, tr, th {
-    table-layout: fixed;
+    table-layout:fixed;
     text-align: center;
-    width: 70%;
+    width: 100%;
     border-collapse: collapse;
     border: 3px solid;
     border-style: groove;
-    background-color: rgb(219, 224, 228);
+    background-color: #f2f2f2;
     row-gap: 3px;
+     
 }
 
 tr {
     height: 25px;
+}
+
+table > :first-child {
+    font-style: bold;
 }
 
 /*gallery*/
@@ -274,10 +257,7 @@ footer {
     .responsive {
       width: 100%;
     }
-    .section {
-        width: 100%;
-    }
-  }
+}
 
 @media (max-width: 600px) {
     img {
