@@ -169,6 +169,10 @@ table, tr, th {
     row-gap: 3px;
 }
 
+tr {
+    height: 25px;
+}
+
 /*gallery*/
 
 #gallery {
