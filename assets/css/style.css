@@ -189,8 +189,9 @@ form {
 /*gallery*/
 
 #gallery {
+    clear: both;
     text-align: center;
-    padding-right: 20px;
+    column-gap: 0;
 }
 
 table, th, td {
@@ -216,7 +217,6 @@ div.gallery img {
 }
 
 .responsive {
-    padding: 0 6px;
     float: left;
     width: 24.99999%;
 }
