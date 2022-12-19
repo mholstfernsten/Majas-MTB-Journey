@@ -167,9 +167,9 @@ table > :first-child {
 
 form {
     background-color: #f2f2f2;
-    margin: 20px;
+    margin: auto;
     text-align: center;
-    width: 50%;
+    width: 30%;
 }
 
 .text {
