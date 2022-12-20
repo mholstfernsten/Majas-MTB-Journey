@@ -53,3 +53,6 @@
 <li>https://www.w3schools.com/</li>
 <li>https://fonts.google.com/</li>
 </ul>
+
+<h2>Live site</h2>
+<p>https://helenahagman.github.io/Majas-MTB-Journey/</p>
