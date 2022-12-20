@@ -194,8 +194,6 @@ form {
 #gallery {
     clear: both;
     text-align: center;
-    column-gap: 0;
-    column-count: 4;
 }
 
 div.gallery:hover {
@@ -214,6 +212,7 @@ div.gallery img {
 .responsive {
     float: left;
     width: 24.99999%;
+    height: auto;
 }
 img.resize {
     max-width: 100%;
@@ -278,159 +277,40 @@ footer {
 }
 
 /*media queries*/
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    .responsive {
-        width: 49.99999%;
-        margin: 6px 0;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .responsive {
+ 
+/* Default styles for all screen sizes */
+* {
+    box-sizing: border-box;
+    padding: 10px;
+    margin: auto;
+    border: none;
+  }
+    
+ /* Styles for screens with a maximum width of 1200px */
+  @media only screen and (max-width: 1200px) {
+    /* For mobile phones: */
+    [class*="col-"] {
       width: 100%;
     }
-}
-
-@media (min-width: 1200px) {
-    img {
-        float: none;
-        display: block;
-        margin: 0 auto;
-    }
-    p {
-        clear: both;
-    }
-    [class*="col-"] {
-        width: 100%;
-       }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    .responsive {
-        width: 49.99999%;
-        margin: 6px 0;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    .responsive {
-      width: 100%;
-    }
-}
-
-@media (min-width: 992px) {
-    img {
-        float: none;
-        display: block;
-        margin: 0 auto;
-    }
-    p {
-        clear: both;
-    }
-    [class*="col-"] {
-        width: 100%;
-       }
-}
-
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    .responsive {
-        width: 49.99999%;
-        margin: 6px 0;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .responsive {
-      width: 50%;
-    }
-}
-
-@media (min-width: 768px) {
-    img {
-        float: none;
-        display: block;
-        margin: 0 auto;
-    }
-    p {
-        clear: both;
-    }
-    [class*="col-"] {
-        width: 100%;
-       }
-}
-
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    .responsive {
-        width: 49.99999%;
-        margin: 6px 0;
-    }
-}
-
-@media only screen and (min-width: 600px) {
-    .responsive {
-      width: 100%;
-    }
-}
-
-@media (min-width: 600px) {
-    img {
-        float: none;
-        display: block;
-        margin: 0 auto;
-    }
-    p {
-        clear: both;
-    }
-    [class*="col-"] {
-        width: 80%;
-      }
-
-}
-
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .responsive {
-        width: 49.99999%;
-        margin: 6px 0;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .responsive {
-      width: 100%;
-    }
-}
-
-@media (max-width: 600px) {
-    img {
-        float: none;
-        display: block;
-        margin: 0 auto;
-    }
-    p {
-        clear: both;
+  }
+  
+  /* Styles for screens with a maximum width of 768px */
+  @media only screen and (max-width: 768px) {
+    /* For tablets: */
+    h1 {
+      font-size: 24px;
     }
 
-    [class*="col-"] {
-        width: 100%;
-      }
-}
+  }
+  
+  /* Styles for screens with a maximum width of 480px */
+  @media only screen and (max-width: 480px) {
+    /* For small screens: */
+    h1 {
+      font-size: 18px;
+    }
 
+  }
 
+  
 
-
-
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
