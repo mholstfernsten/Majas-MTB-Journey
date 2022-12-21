@@ -33,17 +33,26 @@
   }
 
 
-  @media only screen and (min-width: 1250px) {
-    /* For mobile phones: */
+  /*@media only screen and (min-width: 1250px) {
+    
     [class*="col-"] {
       width: 50%;
     }
-  }
+  }*/
 
 @media (max-width: 1250px) {
-[class*="col-"]  {
+    /* For mobile phones: */
+.col-6  {
 width: 100%;
 }
+    .col-3{
+    width: 50%;}
+}
+
+@media (max-width: 750px)
+{
+    .col-3{
+    width: 100%;}
 }
 
 
@@ -67,6 +76,7 @@ body {
     padding-bottom: 100px;
     padding-left: 15px;
     padding-right: 15px;
+    max-width: 1600px;
 }
 
 /*headings and logo*/
