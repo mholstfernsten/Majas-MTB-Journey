@@ -201,6 +201,13 @@ form {
     color: slategrey;
 }
 
+.button {
+    background-color: rgb(175, 171, 171);
+    margin-left: 30px;
+    width: 100px;
+    text-transform: uppercase;
+}
+
 .button:hover {
     color:rgb(229, 134, 134);
     background-color: slategrey;
