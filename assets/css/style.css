@@ -1,58 +1,98 @@
-@import url('https://fonts.googleapis.com/css?family=JosefinSans|LucidaSans|Geneva|Verdana')
+@import url('https://fonts.googleapis.com/css?family=JosefinSans|LucidaSans|Geneva|Verdana') *
 
-* {
+{
     box-sizing: border-box;
     padding: 10px;
     margin: auto;
     border: none;
 }
 
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
 
 [class*="col-"] {
     float: left;
     padding: 15px;
     border: none;
-  }
+}
 
-  .row::after {
+.row::after {
     content: "";
     clear: both;
     display: table;
-  }
+}
 
 
-  @media only screen and (min-width: 1250px) {
-    /* For mobile phones: */
-    [class*="col-"] {
+/*@media only screen and (min-width: 1250px) {*/
+/* For mobile phones: */
+/*[class*="col-"] {
       width: 50%;
     }
-  }
+  }*/
 
-@media (max-width: 1250px) {
-[class*="col-"]  {
-width: 100%;
-}
-}
-
-
-/*@media (max-width: 680px)
-[class*="col-"]  {
-width: 50%;
+/*@media (max-width: 1250px) {
+    .col-6 {
+        width: 100%;
+    }
+    .col-3 {
+        width: 500%;
+    }
 }
 
-@media (min-width: 680px)
+
+@media (max-width: 680px){
+    .col-3, .col-6 {
+        width: 100%;
+    }
+}*/
+
+
+/*@media (min-width: 680px)
 [class*="col-"]  {
 width: 25%;
 }
@@ -67,6 +107,7 @@ body {
     padding-bottom: 100px;
     padding-left: 15px;
     padding-right: 15px;
+    max-width: 1600px;
 }
 
 /*headings and logo*/
@@ -111,28 +152,28 @@ img {
     padding-bottom: 30px;
 }
 
-#menu li {
-    text-align: center;
-    list-style-type: none;
-    margin-right: 20px;
-    color: black;
-    display: inline;
-}
+    #menu li {
+        text-align: center;
+        list-style-type: none;
+        margin-right: 20px;
+        color: black;
+        display: inline;
+    }
 
-#menu a:hover {
-    color: #0000ff;
-}
+    #menu a:hover {
+        color: #0000ff;
+    }
 
 .welcome-text {
     width: 100%;
     padding: 50px 10px 20px 10px;
-    text-align: center; 
+    text-align: center;
 }
 
 .about-text {
     width: 100%;
     padding: 50px 10px 20px 10px;
-    text-align: center; 
+    text-align: center;
 }
 
 
@@ -157,7 +198,7 @@ img {
 }
 
 table, tr, th {
-    table-layout:fixed;
+    table-layout: fixed;
     text-align: center;
     width: 100%;
     border-collapse: collapse;
@@ -165,7 +206,6 @@ table, tr, th {
     border-style: groove;
     background-color: #f2f2f2;
     row-gap: 3px;
-     
 }
 
 tr {
@@ -182,7 +222,7 @@ table > :first-child {
     position: relative;
     text-align: center;
     max-width: 500px;
-    margin:auto;
+    margin: auto;
 }
 
 form {
@@ -197,9 +237,9 @@ form {
     width: max-content;
 }
 
-.text:hover {
-    color: slategrey;
-}
+    .text:hover {
+        color: slategrey;
+    }
 
 .button {
     background-color: rgb(175, 171, 171);
@@ -208,10 +248,10 @@ form {
     text-transform: uppercase;
 }
 
-.button:hover {
-    color:rgb(229, 134, 134);
-    background-color: slategrey;
-}
+    .button:hover {
+        color: rgb(229, 134, 134);
+        background-color: slategrey;
+    }
 
 /*gallery*/
 
@@ -238,6 +278,7 @@ div.gallery img {
     width: 24.99999%;
     height: auto;
 }
+
 img.resize {
     max-width: 100%;
     max-height: 50%;
@@ -265,25 +306,25 @@ footer {
     padding-top: 100px;
 }
 
-.social-media-links :hover {
-    color: #0000ff;
-}
+    .social-media-links :hover {
+        color: #0000ff;
+    }
 
-.social-media-links i {
-    color: rgb(81, 81, 233);
-    font-size: 200%;
-    margin: 1%;
-    padding: 3%;
-}
+    .social-media-links i {
+        color: rgb(81, 81, 233);
+        font-size: 200%;
+        margin: 1%;
+        padding: 3%;
+    }
 
-.social-media-links > li{
-    display: contents;
-}
+    .social-media-links > li {
+        display: contents;
+    }
 
 .fa-instagram {
     background: none;
     color: white;
-} 
+}
 
 .fa {
     padding: 20px;
@@ -301,40 +342,43 @@ footer {
 }
 
 /*media queries*/
- 
+
 /* Default styles for all screen sizes */
 * {
     box-sizing: border-box;
     padding: 10px;
     margin: auto;
     border: none;
-  }
-    
- /* Styles for screens with a maximum width of 1200px */
-  @media only screen and (max-width: 1200px) {
+}
+
+/* Styles for screens with a maximum width of 1200px */
+@media only screen and (max-width: 1200px) {
     /* For mobile phones: */
-    [class*="col-"] {
-      width: 100%;
-    }
-  }
-  
-  /* Styles for screens with a maximum width of 768px */
-  @media only screen and (max-width: 768px) {
-    /* For tablets: */
-    h1 {
-      font-size: 24px;
+    .col-6 {
+        width: 100%;
     }
 
-  }
-  
-  /* Styles for screens with a maximum width of 480px */
-  @media only screen and (max-width: 480px) {
+    .col-3 {
+        width: 50%;
+    }
+}
+
+/* Styles for screens with a maximum width of 768px */
+@media only screen and (max-width: 768px) {
+    /* For tablets: */
+    
+    [class*="col-"] {
+        width: 100%;
+    }
+    h1 {
+        font-size: 24px;
+    }
+}
+
+/* Styles for screens with a maximum width of 480px */
+@media only screen and (max-width: 480px) {
     /* For small screens: */
     h1 {
-      font-size: 18px;
+        font-size: 18px;
     }
-
-  }
-
-  
-
+}
